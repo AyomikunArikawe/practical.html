@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Ayomikun" content="Assignment" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML practical</title>
+    <link rel="stylesheet" href="main.css" type="text/css" />
+  </head>
+  <body>
+    <hr />
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#aboutauthor">About Author</a></li>
+          <li><a href="#books">Books</a></li>
+          <li><a href="#quiz">Quiz</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <main id="aboutauthor">
+      <h1>
+        Hello everyone my name is <br />&nbsp;&nbsp;&nbsp;<code
+          >&lt;h1&gt;<i>Arikawe Ayomikun</i>&lt/h1&gt;</code
+        >
+      </h1>
+      <hr />
+      <h2><strong>Some facts about me:</strong></h2>
+      <p><em>Here are somethings you probably dont know about me:</em></p>
+      <ul>
+        <li>I grauated from an only boys secondary school</li>
+        <li>I was also a prefect</li>
+        <li>I am also learning how to play the piano</li>
+      </ul>
+    </main>
+    <hr />
+    <article id="books">
+      <h2>Books i've read!</h2>
+      <span
+        >I'm not really a fan of reading books but here are some books i've
+        read:
+      </span>
+      <dl>
+        <dt><strong>Additional Mathematics For West Africa.</strong></dt>
+        <dd>
+          It is a further mathematics textbook i used all through secondary
+          school.It really helped me in waec neco amd Jamb exams back then. IF
+          you want a copy for yourself you can check
+          <a
+            href="https://www.jumia.com.ng/generic-additional-mathematics-for-west-africa-90411366.html"
+            >here</a
+          >
+
+          <figure>
+            <img
+              src="image/WhatsApp Image 2025-06-03 at 20.00.36_733cca78.jpg"
+              alt="textbook"
+              width="400"
+              height="400"
+            />
+            <figcaption>MATH TEXTBOOK.</figcaption>
+          </figure>
+        </dd>
+        <hr />
+        <dt>
+          <strong>All Inclusive calculations Physics. </strong>
+        </dt>
+        <dd>
+          This is also another book that was of great help to me because i
+          struggled with physics for some time but this textbook made it easy
+          for me to understand.You can get the pdf
+          <a
+            href="https://9jabaz.ng/wp-content/uploads/2022/04/All-inclusive-calculation-in-physics.pdf"
+            >here</a
+          >. <br />I highly recommend this book for someone who is struggling
+          with physics.
+          <figure>
+            <img
+              src="image/WhatsApp Image 2025-06-03 at 20.00.36_bf29604b.jpg"
+              alt="Physics textbook"
+              width="400"
+              height="400"
+            />
+            <figcaption>PHYSICS TEXTBOOK.</figcaption>
+          </figure>
+        </dd>
+        <hr />
+        <dt><strong>Understanding Chemistry.</strong></dt>
+        <dd>
+          This is the Chemistry textbook i used for my external examination.I
+          highly recommend this textbook too. <br />You can get it
+          <a
+            href="https://www.jumia.com.ng/generic-understanding-chemistry-for-schools-and-colleges-4th-edition-big-print-288664274.html"
+            >here</a
+          >
+          <figure>
+            <img
+              src="image/WhatsApp Image 2025-06-03 at 20.00.37_09c403c0.jpg"
+              alt="chemistry textbook"
+              width="400"
+              height="400"
+            />
+            <figcaption>UNDERSTANDING CHEMISTRY.</figcaption>
+          </figure>
+        </dd>
+        <hr />
+        <dt><strong>The Life Changer.</strong></dt>
+        <dd>
+          This is the story book we were to read in preparation for jamb exam.
+
+          <figure>
+            <img
+              src="image/lifechanger.jpg"
+              alt="THE LIFE CHANGER"
+              width="400"
+              height="400"
+            />
+            <figcaption>THE LIFE CHANGER.</figcaption>
+          </figure>
+        </dd>
+      </dl>
+    </article>
+    <hr />
+    <footer id="quiz">
+      <h5>Quick quiz</h5>
+      <form action="https://httpbin.org/post" method="post">
+        <fieldset>
+          <legend>Have you read any of these books?</legend>
+          <p>
+            <input
+              type="radio"
+              name="response"
+              value="Yes "
+              id="Yes"
+              required
+            />
+            <label for="Yes">Yes</label>
+          </p>
+          <p>
+            <input type="radio" name="response" value="no " id="no" required />
+            <label for="No">No</label>
+          </p>
+          <p>
+            <input
+              type="radio"
+              name="response"
+              value="can'tremember"
+              id="can'tremember"
+              required
+            />
+            <label for="can'tremember">can't remember</label>
+          </p>
+          <p>
+            <input
+              type="radio"
+              name="response"
+              value="Notsure"
+              id="Notsure"
+              required
+            />
+            <label for="Notsure">Not sure</label>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Leave a message here</legend>
+          <p>
+            <label for="message">Your message:</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Type your message here"
+              required
+            ></textarea>
+          </p>
+        </fieldset>
+        <p>
+          <label for="rating">rate my assignment out of 10:</label>
+          <input
+            type="number"
+            name="rating"
+            id="rating"
+            min="0"
+            max="10"
+            step="1"
+            required
+            value="1"
+          />
+        </p>
+
+        <button type="reset">reset</button>
+        <button type="submit">submit</button>
+      </form>
+      <p>
+        <a href="#">back to top</a>
+      </p>
+    </footer>
+    <hr />
+  </body>
+</html>
